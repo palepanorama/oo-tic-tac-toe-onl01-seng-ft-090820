@@ -68,4 +68,8 @@ class TicTacToe
         turn 
       end 
     end 
+    
+    def won? 
+        WIN_COMBINATIONS.each do |x| 
+          
 end 
