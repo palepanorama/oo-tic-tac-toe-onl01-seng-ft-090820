@@ -110,10 +110,11 @@ class TicTacToe
     
     if over?
       if draw? 
-        puts 
-
+        puts "The game is a draw."
+      end 
+      if won? 
+        puts "Congratulations #{winner}!"
+      end 
+    end 
   end 
-  
-
-  
 end 
