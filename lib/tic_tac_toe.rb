@@ -56,5 +56,10 @@ class TicTacToe
     def turn 
       puts "It's #{current_player}'s turn."
       puts "Please enter 1-9:"
+      input = gets.strip 
+      if input == exit 
+        over?(exit)
+      end 
+      
     end 
 end 
