@@ -86,8 +86,14 @@ class TicTacToe
         false 
       end 
       
-    def full?
+  def full?
     !(@board.include?(" ") || @board.include?(""))
   end
+  
+  def draw?
+    
+  end 
+  
+
   
 end 
