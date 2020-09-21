@@ -85,9 +85,5 @@ class TicTacToe
         end 
         false 
       end 
-      
-    end 
-  end 
-end 
   
 end 
