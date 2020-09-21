@@ -73,5 +73,17 @@ class TicTacToe
         WIN_COMBINATIONS.each do |x| 
           win0 = x[0]
           win1 = x[1]
-          win2 = x[2]
+          win2 = x
+          
+          place0 = @board[win0]
+          place1 = @board[win1]
+          place2 = @board[win2]
+          
+          if position_taken?(win0) && place0 == place1 && place1 == place2
+            return x 
+          end 
+        end 
+        false 
+      end 
+  
 end 
